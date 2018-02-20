@@ -2,31 +2,26 @@ public class OperatorsExample {
 	public static void main(String[] args) {
 		
 		// Modifying operators: +, -, *, /, %
-		int x = 5 + 5;
-		System.out.println("X starts off as the value of 5 + 5: " + x);
-		
-		x = x + 2;
-		System.out.println("We add 2 to the value X already had: " + x);
-		
-		x += 7;
-		System.out.println("The += operator is similar to x = x + #: " + x);
-
-		x -= 1;
+		int x = 1;
+		System.out.println("x = 1 : " + x);
+		x += 4;
+		System.out.println("x +=4 : " + x);
+		x -= 2;
+		System.out.println("x -= 2 : " + x);
 		x *= 2;
+		System.out.println("x *= 2 : " + x);
 		x /= 3;
-		System.out.println("Here we are doing a series of operations on the variable: " + x);
+		System.out.println("x /= 3 : " + x);
 		
-		x++;
-		System.out.println("This is a shortcut to incrementing x by 1. This is so common that is has"
-				+ " it's own operator. Hint this is where C++ got it's name. Anyway, here's the value"
-				+ " of x: " + x);
+		x = 8;		// Try changing this to even and odd numbers
+		if(x % 2 == 0) {
+			System.out.println("x was evenly divisble by 2");
+		} else {
+			System.out.println("x was odd");
+		}
 		
-		x--;
-		System.out.println("We can subtract too! x: " + x);
-		
-		x %= 5;
-		System.out.println("This is a weird one. The modulus operator returns the remainder of a division."
-				+ " So, 12 / 5 = 2 with a remainer of: " + x);
+		x++;	// Same as x = x + 1
+		x--;	// Same as x = x - 1
 
 		// Comparative operators: >, <, >=, <=, ==, !=
 		boolean ans = 3 > 2;
